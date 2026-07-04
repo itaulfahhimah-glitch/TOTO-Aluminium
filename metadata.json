@@ -1,0 +1,6 @@
+{
+  "name": "Toto Aluminium",
+  "description": "Portofolio profesional, kalkulator estimasi biaya kusen aluminium & kaca, dan konsultasi desain bertenaga AI.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
