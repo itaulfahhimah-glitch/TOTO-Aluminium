@@ -99,7 +99,7 @@ export default function Navbar({ activeSection, setActiveSection }: NavbarProps)
           {/* Contact CTA */}
           <div className="hidden lg:flex items-center">
             <a
-              href="https://wa.me/6281234567890?text=Halo%20Toto%20Aluminium%2C%20saya%20tertarik%20untuk%20konsultasi%20kusen%20dan%20kaca."
+              href="https://wa.me/6283862492586?text=Halo%20Toto%20Aluminium%2C%20saya%20tertarik%20untuk%20konsultasi%20kusen%20dan%20kaca."
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center space-x-2 bg-sky-600 hover:bg-sky-500 text-white px-4 py-2 rounded-lg font-display font-semibold text-xs tracking-wide uppercase shadow-lg shadow-sky-600/25 transition-all hover:translate-y-[-1px] active:translate-y-[1px]"
@@ -144,7 +144,7 @@ export default function Navbar({ activeSection, setActiveSection }: NavbarProps)
           ))}
           <div className="pt-4 px-4">
             <a
-              href="https://wa.me/6281234567890?text=Halo%20Toto%20Aluminium%2C%20saya%20tertarik%20untuk%20konsultasi%20kusen%20dan%20kaca."
+              href="https://wa.me/6283862492586?text=Halo%20Toto%20Aluminium%2C%20saya%20tertarik%20untuk%20konsultasi%20kusen%20dan%20kaca."
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center space-x-2 w-full bg-sky-600 hover:bg-sky-500 text-white py-3 rounded-lg font-display font-semibold text-xs tracking-wide uppercase shadow-lg"

@@ -265,7 +265,7 @@ Mohon dibuatkan penawaran harga resmi (SPK) dan koordinasikan jadwal pengukuran 
               </p>
               
               <p className="text-[10px] text-slate-500 font-mono">
-                Workshop: Setu, Tangerang Selatan, Banten
+                Workshop: Karangbahagia, Kabupaten Bekasi, Jawa Barat
               </p>
             </div>
 
@@ -314,7 +314,7 @@ Mohon dibuatkan penawaran harga resmi (SPK) dan koordinasikan jadwal pengukuran 
           {/* Bottom license statement */}
           <div className="border-t border-slate-900 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-slate-500">
             <p>&copy; {new Date().getFullYear()} Toto Aluminium & Glass. All Rights Reserved. Hak cipta dilindungi undang-undang.</p>
-            <p className="font-mono text-right">Tangerang Selatan, Banten, Indonesia</p>
+            <p className="font-mono text-right">Bekasi, Jawa Barat, Indonesia</p>
           </div>
 
         </div>
@@ -322,7 +322,7 @@ Mohon dibuatkan penawaran harga resmi (SPK) dan koordinasikan jadwal pengukuran 
 
       {/* Floating Action WhatsApp shortcut button */}
       <a 
-        href="https://wa.me/6281234567890?text=Halo%20Toto%20Aluminium%2C%20saya%20tertarik%20ingin%20jadwalkan%20survei%20lapangan%20gratis."
+        href="https://wa.me/6283862492586?text=Halo%20Toto%20Aluminium%2C%20saya%20tertarik%20ingin%20jadwalkan%20survei%20lapangan%20gratis."
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-6 right-6 z-40 bg-emerald-500 hover:bg-emerald-400 text-slate-950 p-3.5 sm:p-4 rounded-full shadow-2xl shadow-emerald-500/25 transition-all hover:scale-105 active:scale-95 flex items-center justify-center group"

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { QuoteFormData } from "../types";
-import { Phone, Mail, MapPin, Clock, Send, ShieldCheck, ClipboardCheck, ArrowRight } from "lucide-react";
+import { Phone, Mail, MapPin, Clock, Send, ShieldCheck, ClipboardCheck, ArrowRight, ExternalLink } from "lucide-react";
 
 interface ContactProps {
   prefilledNotes?: string;
@@ -138,8 +138,17 @@ export default function Contact({ prefilledNotes, prefilledCost, prefilledSpecs,
                   <div>
                     <h4 className="text-xs font-semibold text-slate-400 uppercase">Alamat Workshop</h4>
                     <p className="text-xs sm:text-sm text-slate-250 mt-1 leading-relaxed">
-                      Jl. Raya Puspiptek No. 42, Kel. Setu, Kec. Setu, Kota Tangerang Selatan, Banten 15314
+                      Jl. Raya Sukamantri, Sukaraya, Kec. Karangbahagia, Kabupaten Bekasi, Jawa Barat 17530
                     </p>
+                    <a 
+                      href="https://www.google.com/maps/place/Jl.+Raya+Sukamantri,+Sukaraya,+Kec.+Karangbahagia,+Kabupaten+Bekasi,+Jawa+Barat+17530/@-6.2383555,107.1603274,17z/data=!3m1!4b1!4m6!3m5!1s0x2e698445a61e3765:0x906cc36e54ecc1f8!8m2!3d-6.2383555!4d107.1629077!16s%2Fg%2F1hm33tzgr"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center space-x-1 text-xs text-sky-400 hover:text-sky-300 font-semibold hover:underline mt-1.5"
+                    >
+                      <span>Buka Petunjuk Arah</span>
+                      <ExternalLink className="w-3 h-3" />
+                    </a>
                   </div>
                 </div>
 
@@ -148,11 +157,11 @@ export default function Contact({ prefilledNotes, prefilledCost, prefilledSpecs,
                   <div>
                     <h4 className="text-xs font-semibold text-slate-400 uppercase">WhatsApp Hotline & Telp</h4>
                     <a 
-                      href="https://wa.me/6281234567890" 
+                      href="https://wa.me/6283862492586" 
                       target="_blank" 
                       className="text-xs sm:text-sm text-sky-300 font-semibold hover:underline mt-1 block"
                     >
-                      +62 812-3456-7890 (Staf Survei Lapangan)
+                      +62 838-6249-2586 (Staf Survei Lapangan)
                     </a>
                   </div>
                 </div>
@@ -162,10 +171,10 @@ export default function Contact({ prefilledNotes, prefilledCost, prefilledSpecs,
                   <div>
                     <h4 className="text-xs font-semibold text-slate-400 uppercase">Email Kantor</h4>
                     <a 
-                      href="mailto:contact@totoaluminium.com" 
+                      href="mailto:fatir.priatnaputra84@gmail.com" 
                       className="text-xs sm:text-sm text-slate-250 hover:underline mt-1 block"
                     >
-                      contact@totoaluminium.com
+                      fatir.priatnaputra84@gmail.com
                     </a>
                   </div>
                 </div>
@@ -186,14 +195,25 @@ export default function Contact({ prefilledNotes, prefilledCost, prefilledSpecs,
               <div className="border-t border-slate-800 pt-5">
                 <span className="text-[10px] font-mono uppercase tracking-widest text-slate-400 block mb-2">Area Layanan Pemasangan:</span>
                 <p className="text-xs text-slate-350 leading-relaxed font-light">
-                  Seluruh Tangerang Raya (BSD, Bintaro, Karawaci, Serpong), DKI Jakarta (Barat, Selatan, Timur, Pusat), Depok, dan Bekasi Barat.
+                  Karawang, Bekasi, DKI Jakart, Bandung, Depok, dan Melayani Pesanan Luar Pulau, (Syarat Dan Ketentuan Berlaku).
                 </p>
               </div>
             </div>
 
             {/* Custom Interactive Mock Map View representing real physical workshop */}
             <div className="relative bg-white border border-slate-200/80 p-4 rounded-2xl shadow-sm space-y-3">
-              <span className="font-mono text-[9px] tracking-wider text-sky-600 font-bold uppercase block">Peta Lokasi Bengkel</span>
+              <div className="flex items-center justify-between">
+                <span className="font-mono text-[9px] tracking-wider text-sky-600 font-bold uppercase block">Peta Lokasi Bengkel</span>
+                <a 
+                  href="https://www.google.com/maps/place/Jl.+Raya+Sukamantri,+Sukaraya,+Kec.+Karangbahagia,+Kabupaten+Bekasi,+Jawa+Barat+17530/@-6.2383555,107.1603274,17z/data=!3m1!4b1!4m6!3m5!1s0x2e698445a61e3765:0x906cc36e54ecc1f8!8m2!3d-6.2383555!4d107.1629077!16s%2Fg%2F1hm33tzgr"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center space-x-1 text-[10px] text-sky-600 hover:text-sky-500 font-semibold hover:underline"
+                >
+                  <span>Buka di Google Maps</span>
+                  <ExternalLink className="w-3 h-3" />
+                </a>
+              </div>
               <div className="relative h-44 bg-slate-100 rounded-xl overflow-hidden border border-slate-200/50 flex items-center justify-center">
                 
                 {/* Visual grid representing streets */}
@@ -218,7 +238,7 @@ export default function Contact({ prefilledNotes, prefilledCost, prefilledSpecs,
                 </div>
 
                 <div className="absolute bottom-2.5 right-2.5 bg-slate-900/90 backdrop-blur-md text-white text-[9px] font-mono px-2 py-0.5 rounded border border-slate-700">
-                  Puspiptek Raya, Tangsel
+                  Karangbahagia, Kab. Bekasi
                 </div>
               </div>
             </div>
