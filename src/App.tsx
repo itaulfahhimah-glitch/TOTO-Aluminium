@@ -6,6 +6,7 @@ import CalculatorComponent from "./components/Calculator";
 import AIConsultant from "./components/AI_Consultant";
 import FAQ from "./components/FAQ";
 import Contact from "./components/Contact";
+import AboutUs from "./components/AboutUs";
 import { TESTIMONIALS } from "./data";
 import { Project } from "./types";
 import { Star, MessageSquare, ShieldCheck, Award, ThumbsUp, Wrench, Sparkles, Phone, ArrowUp } from "lucide-react";
@@ -81,20 +82,31 @@ Mohon dibuatkan penawaran harga resmi (SPK) dan koordinasikan jadwal pengukuran 
   };
 
   const handleNavigateToSection = (sectionId: string) => {
+    const wasInAboutUs = activeSection === "about-us";
     setActiveSection(sectionId);
-    const element = document.getElementById(sectionId);
-    if (element) {
-      const offset = 80;
-      const bodyRect = document.body.getBoundingClientRect().top;
-      const elementRect = element.getBoundingClientRect().top;
-      const elementPosition = elementRect - bodyRect;
-      const offsetPosition = elementPosition - offset;
+    
+    const delay = wasInAboutUs ? 120 : 0;
+    
+    setTimeout(() => {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        const offset = 80;
+        const bodyRect = document.body.getBoundingClientRect().top;
+        const elementRect = element.getBoundingClientRect().top;
+        const elementPosition = elementRect - bodyRect;
+        const offsetPosition = elementPosition - offset;
 
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: "smooth"
-      });
-    }
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth"
+        });
+      } else {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth"
+        });
+      }
+    }, delay);
   };
 
   const handleScrollToTop = () => {
@@ -107,13 +119,16 @@ Mohon dibuatkan penawaran harga resmi (SPK) dan koordinasikan jadwal pengukuran 
   return (
     <div className="min-h-screen flex flex-col bg-[#070b13] text-slate-100 selection:bg-sky-500 selection:text-white">
       {/* Header / Navigation */}
-      <Navbar activeSection={activeSection} setActiveSection={setActiveSection} />
+      <Navbar activeSection={activeSection} setActiveSection={handleNavigateToSection} />
 
       {/* Main Content Sections */}
       <main className="flex-1">
-        
-        {/* Hero Section */}
-        <Hero onNavigate={handleNavigateToSection} />
+        {activeSection === "about-us" ? (
+          <AboutUs onBackToHome={() => handleNavigateToSection("home")} />
+        ) : (
+          <>
+            {/* Hero Section */}
+            <Hero onNavigate={handleNavigateToSection} />
 
         {/* Brand Core Value Advantages Showcase */}
         <section className="py-20 bg-[#090d16] border-b border-slate-900/80">
@@ -234,14 +249,15 @@ Mohon dibuatkan penawaran harga resmi (SPK) dan koordinasikan jadwal pengukuran 
         {/* Accordion FAQ Area */}
         <FAQ />
 
-        {/* Contact Submission & Maps location section */}
-        <Contact 
-          prefilledNotes={prefilledNotes}
-          prefilledCost={prefilledCost}
-          prefilledSpecs={prefilledSpecs}
-          onClearPrefilled={handleClearPrefilled}
-        />
-
+            {/* Contact Submission & Maps location section */}
+            <Contact 
+              prefilledNotes={prefilledNotes}
+              prefilledCost={prefilledCost}
+              prefilledSpecs={prefilledSpecs}
+              onClearPrefilled={handleClearPrefilled}
+            />
+          </>
+        )}
       </main>
 
       {/* Footer Area with elegant slate-950 layouts */}
@@ -279,23 +295,28 @@ Mohon dibuatkan penawaran harga resmi (SPK) dan koordinasikan jadwal pengukuran 
               <h4 className="font-display font-bold text-white text-xs uppercase tracking-wider">Navigasi Cepat</h4>
               <ul className="space-y-2 text-xs">
                 <li>
-                  <button onClick={() => handleNavigateToSection("home")} className="hover:text-sky-400 transition-colors">
+                  <button onClick={() => handleNavigateToSection("home")} className="hover:text-sky-400 transition-colors cursor-pointer">
                     Beranda
                   </button>
                 </li>
                 <li>
-                  <button onClick={() => handleNavigateToSection("portfolio")} className="hover:text-sky-400 transition-colors">
+                  <button onClick={() => handleNavigateToSection("portfolio")} className="hover:text-sky-400 transition-colors cursor-pointer">
                     Katalog Portofolio
                   </button>
                 </li>
                 <li>
-                  <button onClick={() => handleNavigateToSection("calculator")} className="hover:text-sky-400 transition-colors">
+                  <button onClick={() => handleNavigateToSection("calculator")} className="hover:text-sky-400 transition-colors cursor-pointer">
                     Kalkulator Estimasi Biaya
                   </button>
                 </li>
                 <li>
-                  <button onClick={() => handleNavigateToSection("consultant")} className="hover:text-sky-400 transition-colors">
+                  <button onClick={() => handleNavigateToSection("consultant")} className="hover:text-sky-400 transition-colors cursor-pointer">
                     Diskusi AI Konsultan
+                  </button>
+                </li>
+                <li>
+                  <button onClick={() => handleNavigateToSection("about-us")} className="text-sky-400 hover:text-sky-350 font-semibold transition-colors cursor-pointer">
+                    Tentang Kami
                   </button>
                 </li>
               </ul>
