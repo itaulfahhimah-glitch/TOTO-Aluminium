@@ -157,11 +157,11 @@ export default function Contact({ prefilledNotes, prefilledCost, prefilledSpecs,
                   <div>
                     <h4 className="text-xs font-semibold text-slate-400 uppercase">WhatsApp Hotline & Telp</h4>
                     <a 
-                      href="https://wa.me/6283862492586" 
+                      href="https://wa.me/6285862492586" 
                       target="_blank" 
                       className="text-xs sm:text-sm text-sky-300 font-semibold hover:underline mt-1 block"
                     >
-                      +62 838-6249-2586 (Staf Survei Lapangan)
+                      +62 858-6249-2586 (Staf Survei Lapangan)
                     </a>
                   </div>
                 </div>
