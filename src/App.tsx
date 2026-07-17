@@ -252,8 +252,13 @@ Mohon dibuatkan penawaran harga resmi (SPK) dan koordinasikan jadwal pengukuran 
             {/* Column 1: Brand details */}
             <div className="md:col-span-5 space-y-4">
               <div className="flex items-center space-x-2.5">
-                <div className="w-9 h-9 bg-gradient-to-tr from-sky-600 to-sky-400 rounded-lg flex items-center justify-center font-display font-black text-white text-base shadow-md">
-                  TA
+                <div className="w-9 h-9 bg-white rounded-lg flex items-center justify-center shadow-md overflow-hidden border border-slate-800">
+                  <img 
+                    src="/logo.png" 
+                    alt="Logo Toto Aluminium" 
+                    className="w-full h-full object-cover"
+                    referrerPolicy="no-referrer"
+                  />
                 </div>
                 <span className="font-display font-extrabold text-white text-base tracking-wide">
                   TOTO <span className="text-sky-500">ALUMINIUM</span>

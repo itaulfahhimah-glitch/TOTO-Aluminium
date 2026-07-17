@@ -64,10 +64,13 @@ export default function Navbar({ activeSection, setActiveSection }: NavbarProps)
             onClick={() => handleNavClick("home")}
             className="flex items-center space-x-2.5 cursor-pointer group"
           >
-            <div className="relative flex items-center justify-center w-10 h-10 bg-gradient-to-tr from-sky-600 to-sky-400 rounded-lg shadow-md shadow-sky-500/20 group-hover:scale-105 transition-all">
-              <span className="font-display font-black text-white text-lg tracking-wider">TA</span>
-              {/* Corner accent reflecting reflection of glass */}
-              <div className="absolute inset-0 bg-gradient-to-b from-white/25 to-transparent rounded-lg pointer-events-none"></div>
+            <div className="relative flex items-center justify-center w-10 h-10 bg-white rounded-lg shadow-md overflow-hidden border border-slate-800 group-hover:scale-105 transition-all">
+              <img 
+                src="/logo.png" 
+                alt="Logo Toto Aluminium" 
+                className="w-full h-full object-cover"
+                referrerPolicy="no-referrer"
+              />
             </div>
             <div>
               <span className="font-display font-extrabold text-white text-lg tracking-wide group-hover:text-sky-400 transition-colors">
