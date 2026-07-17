@@ -119,7 +119,7 @@ export default function AboutUs({ onBackToHome }: AboutUsProps) {
                   <h4 className="font-display font-bold text-xs sm:text-sm text-slate-150">Kesan Mengikuti Perkuliahan</h4>
                 </div>
                 <p className="text-[11px] sm:text-xs text-slate-300 leading-relaxed font-light bg-slate-950/20 p-3.5 rounded-xl border border-slate-850/60">
-                  Perkuliahan <strong className="text-sky-400 font-semibold">Aplikasi Komputer Bisnis</strong> di STIE Ekadharma Indonesia telah memberikan pengalaman belajar yang sangat luar biasa dan berharga. Mata kuliah ini tidak hanya mengajarkan teori, tetapi juga memberikan pemahaman mendalam tentang bagaimana teknologi digital modern dapat diintegrasikan secara nyata untuk memecahkan problem operasional bisnis, seperti pembuatan kalkulator estimasi biaya otomatis dan asisten berbasis kecerdasan buatan. Dosen pembimbing menyampaikan materi secara interaktif dan praktis, sehingga melatih kreativitas, ketelitian, dan logika pemecahan masalah kami guna menghadapi tantangan digitalisasi industri di masa depan.
+                  Jujur selama mengikuti perkuliahan Aplikasi Komputer Bisnis yang di ampu Pak Ali saya merasa balik ke masa dimana saya masih senang utak atik komputer, buat aplikasi sederhana, buat game sederhana pake delfi, visual basic dll. Apalagi penjelasan Pak Ali sangat detail, saya merasa menemukan lagi sesuatu yang hilang dalam diri saya. Mungkin kayak lebay, tapi dulu hobi saya memang lebih ke dunia IT, namun perlahan hilang ditimbun kesibukan dan kebutuhan.
                 </p>
               </div>
 
