@@ -105,7 +105,7 @@ Mohon dibuatkan penawaran harga resmi (SPK) dan koordinasikan jadwal pengukuran 
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-slate-50 text-slate-900 selection:bg-sky-500 selection:text-white">
+    <div className="min-h-screen flex flex-col bg-[#070b13] text-slate-100 selection:bg-sky-500 selection:text-white">
       {/* Header / Navigation */}
       <Navbar activeSection={activeSection} setActiveSection={setActiveSection} />
 
@@ -116,46 +116,46 @@ Mohon dibuatkan penawaran harga resmi (SPK) dan koordinasikan jadwal pengukuran 
         <Hero onNavigate={handleNavigateToSection} />
 
         {/* Brand Core Value Advantages Showcase */}
-        <section className="py-20 bg-white border-b border-slate-100">
+        <section className="py-20 bg-[#090d16] border-b border-slate-900/80">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
               
               <div className="flex flex-col items-center text-center space-y-3.5 p-4">
-                <div className="w-12 h-12 rounded-2xl bg-sky-50 border border-sky-150 flex items-center justify-center text-sky-600">
+                <div className="w-12 h-12 rounded-2xl bg-sky-500/10 border border-sky-500/20 flex items-center justify-center text-sky-400 shadow-md shadow-sky-500/5">
                   <Award className="w-6 h-6" />
                 </div>
-                <h3 className="font-display font-bold text-sm sm:text-base text-slate-900">Pengalaman & Keandalan</h3>
-                <p className="text-xs text-slate-500 leading-relaxed font-light">
+                <h3 className="font-display font-bold text-sm sm:text-base text-slate-100">Pengalaman & Keandalan</h3>
+                <p className="text-xs text-slate-400 leading-relaxed font-light">
                   Lebih dari 10 tahun melayani pengerjaan ruko, ruko komersial, perumahan cluster mewah, dan partisi kantor modern.
                 </p>
               </div>
 
               <div className="flex flex-col items-center text-center space-y-3.5 p-4">
-                <div className="w-12 h-12 rounded-2xl bg-sky-50 border border-sky-150 flex items-center justify-center text-sky-600">
+                <div className="w-12 h-12 rounded-2xl bg-sky-500/10 border border-sky-500/20 flex items-center justify-center text-sky-400 shadow-md shadow-sky-500/5">
                   <Wrench className="w-6 h-6" />
                 </div>
-                <h3 className="font-display font-bold text-sm sm:text-base text-slate-900">Fabrikasi Mandiri (Workshop)</h3>
-                <p className="text-xs text-slate-500 leading-relaxed font-light">
+                <h3 className="font-display font-bold text-sm sm:text-base text-slate-100">Fabrikasi Mandiri (Workshop)</h3>
+                <p className="text-xs text-slate-400 leading-relaxed font-light">
                   Bahan dipotong & dirakit presisi di workshop mandiri menggunakan mesin potong hidrolik standar pabrikasi modern.
                 </p>
               </div>
 
               <div className="flex flex-col items-center text-center space-y-3.5 p-4">
-                <div className="w-12 h-12 rounded-2xl bg-sky-50 border border-sky-150 flex items-center justify-center text-sky-600">
+                <div className="w-12 h-12 rounded-2xl bg-sky-500/10 border border-sky-500/20 flex items-center justify-center text-sky-400 shadow-md shadow-sky-500/5">
                   <ShieldCheck className="w-6 h-6" />
                 </div>
-                <h3 className="font-display font-bold text-sm sm:text-base text-slate-900">Aksesoris & Sealant SNI</h3>
-                <p className="text-xs text-slate-500 leading-relaxed font-light">
+                <h3 className="font-display font-bold text-sm sm:text-base text-slate-100">Aksesoris & Sealant SNI</h3>
+                <p className="text-xs text-slate-400 leading-relaxed font-light">
                   Hanya menggunakan sealant anti-UV tahan cuaca buruk serta aksesoris handle & engsel bermerk resmi seperti Dekkson/YKK.
                 </p>
               </div>
 
               <div className="flex flex-col items-center text-center space-y-3.5 p-4">
-                <div className="w-12 h-12 rounded-2xl bg-sky-50 border border-sky-150 flex items-center justify-center text-sky-600">
+                <div className="w-12 h-12 rounded-2xl bg-sky-500/10 border border-sky-500/20 flex items-center justify-center text-sky-400 shadow-md shadow-sky-500/5">
                   <ThumbsUp className="w-6 h-6" />
                 </div>
-                <h3 className="font-display font-bold text-sm sm:text-base text-slate-900">Garansi Fungsi Kebocoran</h3>
-                <p className="text-xs text-slate-500 leading-relaxed font-light">
+                <h3 className="font-display font-bold text-sm sm:text-base text-slate-100">Garansi Fungsi Kebocoran</h3>
+                <p className="text-xs text-slate-400 leading-relaxed font-light">
                   Setiap pekerjaan terjamin garansi pemeliharaan selama 3 bulan bebas biaya tambahan jika terjadi rembesan air hujan.
                 </p>
               </div>
@@ -178,17 +178,17 @@ Mohon dibuatkan penawaran harga resmi (SPK) dan koordinasikan jadwal pengukuran 
         <AIConsultant onSelectProduct={(work, brand) => {}} />
 
         {/* Testimonials Review Slider */}
-        <section className="py-24 bg-white border-b border-slate-100">
+        <section className="py-24 bg-[#090d16] border-b border-slate-900/80">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             
             <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-              <span className="font-mono text-xs text-sky-600 font-bold uppercase tracking-widest bg-sky-50 px-3 py-1 rounded-full">
+              <span className="font-mono text-xs text-sky-400 font-bold uppercase tracking-widest bg-sky-950/80 border border-sky-900/55 px-3 py-1 rounded-full">
                 Ulasan Pelanggan
               </span>
-              <h2 className="font-display font-black text-3xl sm:text-4xl text-slate-900 tracking-tight">
+              <h2 className="font-display font-black text-3xl sm:text-4xl text-slate-100 tracking-tight">
                 Apa Kata Klien Setia Kami?
               </h2>
-              <p className="text-sm sm:text-base text-slate-500 leading-relaxed">
+              <p className="text-sm sm:text-base text-slate-400 leading-relaxed">
                 Kami bangga mendapatkan apresiasi dari pemilik hunian pribadi maupun kontraktor profesional atas komitmen kualitas bahan dan ketepatan waktu instalasi.
               </p>
             </div>
@@ -197,30 +197,30 @@ Mohon dibuatkan penawaran harga resmi (SPK) dan koordinasikan jadwal pengukuran 
               {TESTIMONIALS.map((testimonial) => (
                 <div 
                   key={testimonial.id}
-                  className="bg-slate-50 border border-slate-200/60 rounded-2xl p-6 sm:p-8 space-y-4 flex flex-col justify-between"
+                  className="bg-[#0c1222]/80 border border-slate-800/80 rounded-2xl p-6 sm:p-8 space-y-4 flex flex-col justify-between hover:border-slate-700/80 transition-all duration-300 shadow-md hover:shadow-sky-500/5"
                 >
                   <div className="space-y-3.5">
                     {/* Star Rating icons representation */}
-                    <div className="flex items-center space-x-1 text-amber-500">
+                    <div className="flex items-center space-x-1 text-amber-400">
                       {[...Array(testimonial.rating)].map((_, i) => (
-                        <Star key={i} className="w-4 h-4 fill-amber-500" />
+                        <Star key={i} className="w-4 h-4 fill-amber-400" />
                       ))}
                     </div>
 
-                    <p className="text-xs sm:text-sm text-slate-600 leading-relaxed italic font-light">
+                    <p className="text-xs sm:text-sm text-slate-350 leading-relaxed italic font-light">
                       &ldquo;{testimonial.comment}&rdquo;
                     </p>
                   </div>
 
-                  <div className="pt-6 border-t border-slate-200/60 mt-4 flex items-center justify-between">
+                  <div className="pt-6 border-t border-slate-800/80 mt-4 flex items-center justify-between">
                     <div>
-                      <h4 className="font-display font-bold text-xs sm:text-sm text-slate-800">{testimonial.name}</h4>
+                      <h4 className="font-display font-bold text-xs sm:text-sm text-slate-200">{testimonial.name}</h4>
                       <p className="text-[10px] text-slate-400 font-medium">
                         {testimonial.role} {testimonial.company ? `di ${testimonial.company}` : ""}
                       </p>
                     </div>
                     
-                    <span className="bg-sky-50 text-sky-700 text-[9px] font-mono uppercase font-bold tracking-wider px-2 py-0.5 rounded">
+                    <span className="bg-sky-500/10 text-sky-400 border border-sky-500/20 text-[9px] font-mono uppercase font-bold tracking-wider px-2 py-0.5 rounded">
                       {testimonial.projectCompleted}
                     </span>
                   </div>

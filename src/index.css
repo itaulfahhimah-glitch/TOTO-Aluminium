@@ -6,9 +6,9 @@
   --font-display: "Plus Jakarta Sans", "Inter", sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
   
-  --color-brand-primary: #0f172a; /* Slate 900 */
-  --color-brand-accent: #0284c7; /* Sky 600 */
-  --color-brand-accent-hover: #0369a1; /* Sky 700 */
+  --color-brand-primary: #070b13; /* Deep Obsidian Black-Navy */
+  --color-brand-accent: #0ea5e9; /* Sky 500 / Glacier Ice Blue */
+  --color-brand-accent-hover: #38bdf8; /* Sky 400 */
 }
 
 /* Base resets & scrollbars */
@@ -18,27 +18,28 @@ html {
 }
 
 body {
-  background-color: #fafafa;
-  color: #171717;
+  background-color: #070b13;
+  color: #f1f5f9;
 }
 
-/* Custom scrollbar for clean glass look */
+/* Custom scrollbar for clean premium dark glass look */
 ::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f5f9;
+  background: #090e1a;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #cbd5e1;
-  border-radius: 4px;
+  background: #1e293b;
+  border-radius: 5px;
+  border: 2px solid #090e1a;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #94a3b8;
+  background: #38bdf8;
 }
 
 /* Simple animation styles */

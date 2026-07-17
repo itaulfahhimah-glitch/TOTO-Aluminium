@@ -102,18 +102,18 @@ export default function Contact({ prefilledNotes, prefilledCost, prefilledSpecs,
   };
 
   return (
-    <section id="contact" className="py-24 bg-slate-50">
+    <section id="contact" className="py-24 bg-[#070b13] border-t border-slate-900/80">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Title */}
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-          <span className="font-mono text-xs text-sky-600 font-bold uppercase tracking-widest bg-sky-50 px-3 py-1 rounded-full">
+          <span className="font-mono text-xs text-sky-400 font-bold uppercase tracking-widest bg-sky-950/80 border border-sky-900/55 px-3 py-1 rounded-full">
             Ajukan Jadwal Survei
           </span>
-          <h2 className="font-display font-black text-3xl sm:text-4xl text-slate-900 tracking-tight">
+          <h2 className="font-display font-black text-3xl sm:text-4xl text-slate-100 tracking-tight">
             Hubungi Kami & Minta Penawaran
           </h2>
-          <p className="text-sm sm:text-base text-slate-500 leading-relaxed">
+          <p className="text-sm sm:text-base text-slate-400 leading-relaxed">
             Mulai rancangan jendela, pintu sliding, atau kanopi kaca Anda bersama ahlinya. Isi formulir untuk survei lokasi gratis, atau langsung kunjungi workshop kami.
           </p>
         </div>
@@ -125,7 +125,7 @@ export default function Contact({ prefilledNotes, prefilledCost, prefilledSpecs,
           <div className="lg:col-span-5 space-y-6">
             
             {/* Workshop & Contact Card */}
-            <div className="bg-slate-900 text-white rounded-2xl p-6 sm:p-8 border border-slate-800 shadow-xl space-y-6">
+            <div className="bg-[#0c1222] text-white rounded-2xl p-6 sm:p-8 border border-slate-800 shadow-xl space-y-6">
               <div>
                 <span className="font-mono text-[10px] tracking-widest text-sky-400 uppercase font-bold">Detail Workshop Resmi</span>
                 <h3 className="font-display font-black text-xl text-white mt-0.5">Toto Aluminium & Glass</h3>
@@ -137,7 +137,7 @@ export default function Contact({ prefilledNotes, prefilledCost, prefilledSpecs,
                   <MapPin className="w-5 h-5 text-sky-400 shrink-0 mt-0.5" />
                   <div>
                     <h4 className="text-xs font-semibold text-slate-400 uppercase">Alamat Workshop</h4>
-                    <p className="text-xs sm:text-sm text-slate-250 mt-1 leading-relaxed">
+                    <p className="text-xs sm:text-sm text-slate-300 mt-1 leading-relaxed">
                       Jl. Raya Sukamantri, Sukaraya, Kec. Karangbahagia, Kabupaten Bekasi, Jawa Barat 17530
                     </p>
                     <a 
@@ -172,7 +172,7 @@ export default function Contact({ prefilledNotes, prefilledCost, prefilledSpecs,
                     <h4 className="text-xs font-semibold text-slate-400 uppercase">Email Kantor</h4>
                     <a 
                       href="mailto:fatir.priatnaputra84@gmail.com" 
-                      className="text-xs sm:text-sm text-slate-250 hover:underline mt-1 block"
+                      className="text-xs sm:text-sm text-slate-300 hover:underline mt-1 block"
                     >
                       fatir.priatnaputra84@gmail.com
                     </a>
@@ -183,7 +183,7 @@ export default function Contact({ prefilledNotes, prefilledCost, prefilledSpecs,
                   <Clock className="w-5 h-5 text-sky-400 shrink-0 mt-0.5" />
                   <div>
                     <h4 className="text-xs font-semibold text-slate-400 uppercase">Jam Operasional</h4>
-                    <p className="text-xs sm:text-sm text-slate-250 mt-1">
+                    <p className="text-xs sm:text-sm text-slate-300 mt-1">
                       Senin - Sabtu: 08:00 - 17:00 WIB<br />
                       <span className="text-emerald-400">(Minggu Tutup / Janji Survei Saja)</span>
                     </p>
@@ -193,51 +193,51 @@ export default function Contact({ prefilledNotes, prefilledCost, prefilledSpecs,
 
               {/* Operating Coverage Specs */}
               <div className="border-t border-slate-800 pt-5">
-                <span className="text-[10px] font-mono uppercase tracking-widest text-slate-400 block mb-2">Area Layanan Pemasangan:</span>
-                <p className="text-xs text-slate-350 leading-relaxed font-light">
+                <span className="text-[10px] font-mono uppercase tracking-widest text-slate-450 block mb-2">Area Layanan Pemasangan:</span>
+                <p className="text-xs text-slate-400 leading-relaxed font-light">
                   Karawang, Bekasi, DKI Jakart, Bandung, Depok, dan Melayani Pesanan Luar Pulau, (Syarat Dan Ketentuan Berlaku).
                 </p>
               </div>
             </div>
 
             {/* Custom Interactive Mock Map View representing real physical workshop */}
-            <div className="relative bg-white border border-slate-200/80 p-4 rounded-2xl shadow-sm space-y-3">
+            <div className="relative bg-[#0c1222] border border-slate-800/80 p-4 rounded-2xl shadow-sm space-y-3">
               <div className="flex items-center justify-between">
-                <span className="font-mono text-[9px] tracking-wider text-sky-600 font-bold uppercase block">Peta Lokasi Bengkel</span>
+                <span className="font-mono text-[9px] tracking-wider text-sky-400 font-bold uppercase block">Peta Lokasi Bengkel</span>
                 <a 
                   href="https://www.google.com/maps/place/Jl.+Raya+Sukamantri,+Sukaraya,+Kec.+Karangbahagia,+Kabupaten+Bekasi,+Jawa+Barat+17530/@-6.2383555,107.1603274,17z/data=!3m1!4b1!4m6!3m5!1s0x2e698445a61e3765:0x906cc36e54ecc1f8!8m2!3d-6.2383555!4d107.1629077!16s%2Fg%2F1hm33tzgr"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center space-x-1 text-[10px] text-sky-600 hover:text-sky-500 font-semibold hover:underline"
+                  className="inline-flex items-center space-x-1 text-[10px] text-sky-400 hover:text-sky-300 font-semibold hover:underline"
                 >
                   <span>Buka di Google Maps</span>
                   <ExternalLink className="w-3 h-3" />
                 </a>
               </div>
-              <div className="relative h-44 bg-slate-100 rounded-xl overflow-hidden border border-slate-200/50 flex items-center justify-center">
+              <div className="relative h-44 bg-slate-950/70 rounded-xl overflow-hidden border border-slate-800/80 flex items-center justify-center">
                 
                 {/* Visual grid representing streets */}
                 <div className="absolute inset-0 opacity-15" style={{
-                  backgroundImage: "linear-gradient(to right, #0284c7 1px, transparent 1px), linear-gradient(to bottom, #0284c7 1px, transparent 1px)",
+                  backgroundImage: "linear-gradient(to right, #38bdf8 1px, transparent 1px), linear-gradient(to bottom, #38bdf8 1px, transparent 1px)",
                   backgroundSize: "24px 24px"
                 }}></div>
                 
                 {/* Road overlays */}
-                <div className="absolute w-full h-8 bg-white top-16 rotate-1"></div>
-                <div className="absolute h-full w-8 bg-white left-20 rotate-12"></div>
+                <div className="absolute w-full h-8 bg-slate-900/80 top-16 rotate-1"></div>
+                <div className="absolute h-full w-8 bg-slate-900/80 left-20 rotate-12"></div>
                 
                 {/* Pin pointer */}
                 <div className="absolute z-10 flex flex-col items-center">
-                  <div className="bg-slate-900 border border-sky-400 text-white font-display font-bold text-[10px] tracking-wide uppercase px-2.5 py-1 rounded-md shadow-md flex items-center space-x-1.5 mb-1 animate-pulse-slow">
+                  <div className="bg-slate-950 border border-sky-400 text-white font-display font-bold text-[10px] tracking-wide uppercase px-2.5 py-1 rounded-md shadow-md flex items-center space-x-1.5 mb-1 animate-pulse-slow">
                     <span className="w-1.5 h-1.5 rounded-full bg-sky-400"></span>
                     <span>TOTO ALUMINIUM</span>
                   </div>
                   <div className="w-4 h-4 bg-sky-500 rounded-full border-2 border-white shadow-md flex items-center justify-center">
-                    <div className="w-1.5 h-1.5 bg-slate-900 rounded-full"></div>
+                    <div className="w-1.5 h-1.5 bg-slate-950 rounded-full"></div>
                   </div>
                 </div>
 
-                <div className="absolute bottom-2.5 right-2.5 bg-slate-900/90 backdrop-blur-md text-white text-[9px] font-mono px-2 py-0.5 rounded border border-slate-700">
+                <div className="absolute bottom-2.5 right-2.5 bg-slate-950/90 backdrop-blur-md text-white text-[9px] font-mono px-2 py-0.5 rounded border border-slate-800">
                   Karangbahagia, Kab. Bekasi
                 </div>
               </div>
@@ -245,29 +245,29 @@ export default function Contact({ prefilledNotes, prefilledCost, prefilledSpecs,
           </div>
 
           {/* Right Side: Form Submission Panel */}
-          <div className="lg:col-span-7 bg-white border border-slate-200/85 rounded-2xl p-6 sm:p-8 shadow-sm">
+          <div className="lg:col-span-7 bg-[#0c1222]/85 border border-slate-800/80 rounded-2xl p-6 sm:p-8 shadow-sm">
             
             {submissionStatus?.success ? (
               // Success Screen View
               <div className="space-y-6 text-center py-8">
-                <div className="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto text-emerald-600">
+                <div className="w-16 h-16 bg-emerald-950/40 rounded-full flex items-center justify-center mx-auto text-emerald-400 border border-emerald-900/40">
                   <ShieldCheck className="w-8 h-8" />
                 </div>
                 
                 <div className="space-y-2">
-                  <h3 className="font-display font-black text-xl sm:text-2xl text-slate-900">
+                  <h3 className="font-display font-black text-xl sm:text-2xl text-slate-100">
                     Permintaan Kuotasi Terkirim!
                   </h3>
-                  <div className="inline-block bg-slate-900 text-sky-400 font-mono text-sm font-bold tracking-wider px-4 py-1.5 rounded-lg border border-slate-800">
+                  <div className="inline-block bg-slate-950 text-sky-400 font-mono text-sm font-bold tracking-wider px-4 py-1.5 rounded-lg border border-slate-800">
                     No. Ref: {submissionStatus.refNumber}
                   </div>
-                  <p className="text-xs sm:text-sm text-slate-600 leading-relaxed max-w-lg mx-auto pt-2">
+                  <p className="text-xs sm:text-sm text-slate-350 leading-relaxed max-w-lg mx-auto pt-2">
                     {submissionStatus.message}
                   </p>
                 </div>
 
-                <div className="bg-slate-50 border border-slate-200 p-4.5 rounded-xl text-left text-xs text-slate-500 space-y-1.5 max-w-md mx-auto">
-                  <p className="font-semibold text-slate-700">Apa langkah selanjutnya?</p>
+                <div className="bg-slate-950 border border-slate-800 p-4.5 rounded-xl text-left text-xs text-slate-400 space-y-1.5 max-w-md mx-auto">
+                  <p className="font-semibold text-slate-200">Apa langkah selanjutnya?</p>
                   <ul className="list-disc ml-4 space-y-1">
                     <li>Staf survei lapangan kami akan memverifikasi alamat Anda via WhatsApp.</li>
                     <li>Kami menjadwalkan kunjungan gratis membawa katalog fisik & contoh potongan profil.</li>
@@ -277,7 +277,7 @@ export default function Contact({ prefilledNotes, prefilledCost, prefilledSpecs,
 
                 <button
                   onClick={() => setSubmissionStatus(null)}
-                  className="inline-flex items-center space-x-1.5 bg-slate-900 hover:bg-slate-800 text-white font-display font-bold text-xs tracking-wider uppercase px-5 py-3 rounded-lg transition-colors"
+                  className="inline-flex items-center space-x-1.5 bg-sky-600 hover:bg-sky-500 text-white font-display font-bold text-xs tracking-wider uppercase px-5 py-3 rounded-lg transition-colors cursor-pointer"
                 >
                   <span>Kirim Formulir Baru</span>
                 </button>
@@ -286,13 +286,13 @@ export default function Contact({ prefilledNotes, prefilledCost, prefilledSpecs,
               // Standard Active Form View
               <form onSubmit={handleFormSubmit} className="space-y-6">
                 
-                <div className="border-b border-slate-100 pb-3 flex items-center justify-between">
-                  <h3 className="font-display font-bold text-lg text-slate-900 flex items-center gap-2">
-                    <ClipboardCheck className="w-5 h-5 text-sky-500" />
+                <div className="border-b border-slate-800 pb-3 flex items-center justify-between">
+                  <h3 className="font-display font-bold text-lg text-slate-100 flex items-center gap-2">
+                    <ClipboardCheck className="w-5 h-5 text-sky-400" />
                     <span>Formulir Rencana Pemasangan</span>
                   </h3>
                   {prefilledCost ? (
-                    <span className="bg-emerald-50 text-emerald-700 text-[10px] font-mono uppercase font-bold tracking-wider px-2 py-1 rounded">
+                    <span className="bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 text-[10px] font-mono uppercase font-bold tracking-wider px-2 py-1 rounded">
                       ADA ESTIMASI AKTIF
                     </span>
                   ) : null}
@@ -300,20 +300,20 @@ export default function Contact({ prefilledNotes, prefilledCost, prefilledSpecs,
 
                 {/* Optional calculator sync banner */}
                 {prefilledCost ? (
-                  <div className="bg-sky-50 border border-sky-100 p-4 rounded-xl flex items-center justify-between gap-4">
+                  <div className="bg-sky-500/5 border border-sky-500/20 p-4 rounded-xl flex items-center justify-between gap-4">
                     <div className="space-y-0.5">
-                      <span className="text-[10px] font-mono text-sky-600 uppercase font-bold tracking-widest">Detail Estimasi Disematkan:</span>
-                      <p className="text-xs text-slate-700 font-medium line-clamp-1">
+                      <span className="text-[10px] font-mono text-sky-400 uppercase font-bold tracking-widest">Detail Estimasi Disematkan:</span>
+                      <p className="text-xs text-slate-300 font-medium line-clamp-1">
                         {prefilledNotes}
                       </p>
-                      <p className="text-xs font-bold text-slate-900">
-                        Perkiraan Budget: <span className="text-emerald-600">{formatRupiah(prefilledCost)}</span>
+                      <p className="text-xs font-bold text-slate-200">
+                        Perkiraan Budget: <span className="text-emerald-450">{formatRupiah(prefilledCost)}</span>
                       </p>
                     </div>
                     <button
                       type="button"
                       onClick={onClearPrefilled}
-                      className="text-[10px] font-mono uppercase font-bold text-rose-600 hover:underline shrink-0"
+                      className="text-[10px] font-mono uppercase font-bold text-rose-400 hover:underline shrink-0 cursor-pointer"
                     >
                       Batal
                     </button>
@@ -324,66 +324,66 @@ export default function Contact({ prefilledNotes, prefilledCost, prefilledSpecs,
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   
                   <div className="space-y-1.5">
-                    <label className="text-xs font-semibold text-slate-600 tracking-wide uppercase">Nama Lengkap *</label>
+                    <label className="text-xs font-semibold text-slate-450 tracking-wide uppercase">Nama Lengkap *</label>
                     <input
                       type="text"
                       required
                       placeholder="Contoh: Bpk. Hermawan"
                       value={formData.name}
                       onChange={(e) => handleInputChange("name", e.target.value)}
-                      className="w-full bg-slate-50 hover:bg-slate-100/50 border border-slate-200 rounded-xl px-4 py-3 text-sm text-slate-800 placeholder-slate-400 focus:outline-none focus:border-sky-500 transition-colors"
+                      className="w-full bg-slate-950/80 hover:bg-slate-900 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-sky-500 transition-colors"
                     />
                   </div>
 
                   <div className="space-y-1.5">
-                    <label className="text-xs font-semibold text-slate-600 tracking-wide uppercase">Nomor WhatsApp *</label>
+                    <label className="text-xs font-semibold text-slate-450 tracking-wide uppercase">Nomor WhatsApp *</label>
                     <input
                       type="tel"
                       required
                       placeholder="Contoh: 085862492585"
                       value={formData.phone}
                       onChange={(e) => handleInputChange("phone", e.target.value)}
-                      className="w-full bg-slate-50 hover:bg-slate-100/50 border border-slate-200 rounded-xl px-4 py-3 text-sm text-slate-800 placeholder-slate-400 focus:outline-none focus:border-sky-500 transition-colors"
+                      className="w-full bg-slate-950/80 hover:bg-slate-900 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-sky-500 transition-colors"
                     />
                   </div>
 
                   <div className="space-y-1.5 sm:col-span-2">
-                    <label className="text-xs font-semibold text-slate-600 tracking-wide uppercase">Email (Opsional)</label>
+                    <label className="text-xs font-semibold text-slate-450 tracking-wide uppercase">Email (Opsional)</label>
                     <input
                       type="email"
                       placeholder="Contoh: nama@domain.com"
                       value={formData.email}
                       onChange={(e) => handleInputChange("email", e.target.value)}
-                      className="w-full bg-slate-50 hover:bg-slate-100/50 border border-slate-200 rounded-xl px-4 py-3 text-sm text-slate-800 placeholder-slate-400 focus:outline-none focus:border-sky-500 transition-colors"
+                      className="w-full bg-slate-950/80 hover:bg-slate-900 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-sky-500 transition-colors"
                     />
                   </div>
 
                   <div className="space-y-1.5 sm:col-span-2">
-                    <label className="text-xs font-semibold text-slate-600 tracking-wide uppercase">Alamat Lokasi Pemasangan / Survei *</label>
+                    <label className="text-xs font-semibold text-slate-450 tracking-wide uppercase">Alamat Lokasi Pemasangan / Survei *</label>
                     <textarea
                       required
                       rows={3}
                       placeholder="Tuliskan alamat lengkap beserta nomor rumah dan perumahan/kantor untuk kunjungan tim surveyor."
                       value={formData.address}
                       onChange={(e) => handleInputChange("address", e.target.value)}
-                      className="w-full bg-slate-50 hover:bg-slate-100/50 border border-slate-200 rounded-xl px-4 py-3 text-sm text-slate-800 placeholder-slate-400 focus:outline-none focus:border-sky-500 transition-colors resize-none"
+                      className="w-full bg-slate-950/80 hover:bg-slate-900 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-sky-500 transition-colors resize-none"
                     />
                   </div>
 
                   <div className="space-y-1.5 sm:col-span-2">
-                    <label className="text-xs font-semibold text-slate-600 tracking-wide uppercase">Catatan Kebutuhan Tambahan / Keterangan</label>
+                    <label className="text-xs font-semibold text-slate-450 tracking-wide uppercase">Catatan Kebutuhan Tambahan / Keterangan</label>
                     <textarea
                       rows={4}
                       placeholder="Contoh: Saya membutuhkan jendela casement lantai 2 dan sekat kaca tempered untuk kamar mandi basah..."
                       value={formData.notes}
                       onChange={(e) => handleInputChange("notes", e.target.value)}
-                      className="w-full bg-slate-50 hover:bg-slate-100/50 border border-slate-200 rounded-xl px-4 py-3 text-sm text-slate-800 placeholder-slate-400 focus:outline-none focus:border-sky-500 transition-colors resize-none"
+                      className="w-full bg-slate-950/80 hover:bg-slate-900 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-sky-500 transition-colors resize-none"
                     />
                   </div>
                 </div>
 
                 {submissionStatus?.success === false && (
-                  <div className="p-3.5 bg-rose-50 border border-rose-100 text-rose-700 text-xs rounded-xl">
+                  <div className="p-3.5 bg-rose-950/40 border border-rose-900/40 text-rose-400 text-xs rounded-xl">
                     {submissionStatus.message}
                   </div>
                 )}
@@ -393,7 +393,7 @@ export default function Contact({ prefilledNotes, prefilledCost, prefilledSpecs,
                   <button
                     type="submit"
                     disabled={isLoading}
-                    className="w-full flex items-center justify-center space-x-2 bg-slate-900 hover:bg-sky-600 text-white font-display font-black text-xs sm:text-sm tracking-wider uppercase py-4 rounded-xl shadow-lg transition-all disabled:opacity-50"
+                    className="w-full flex items-center justify-center space-x-2 bg-sky-600 hover:bg-sky-500 text-white font-display font-black text-xs sm:text-sm tracking-wider uppercase py-4 rounded-xl shadow-lg transition-all disabled:opacity-50 cursor-pointer"
                   >
                     {isLoading ? (
                       <span>Memproses Pengiriman...</span>
