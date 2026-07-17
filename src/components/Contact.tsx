@@ -340,7 +340,7 @@ export default function Contact({ prefilledNotes, prefilledCost, prefilledSpecs,
                     <input
                       type="tel"
                       required
-                      placeholder="Contoh: 081234567890"
+                      placeholder="Contoh: 085862492585"
                       value={formData.phone}
                       onChange={(e) => handleInputChange("phone", e.target.value)}
                       className="w-full bg-slate-50 hover:bg-slate-100/50 border border-slate-200 rounded-xl px-4 py-3 text-sm text-slate-800 placeholder-slate-400 focus:outline-none focus:border-sky-500 transition-colors"
